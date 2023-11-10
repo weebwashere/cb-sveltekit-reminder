@@ -1,0 +1,1 @@
+Try to keep this directory clean, use [public](./(public)/) or [private](./(private)/) instead. Root URL, /login /logout are already used.

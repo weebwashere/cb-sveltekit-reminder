@@ -14,6 +14,7 @@ const auth: Handle = (async ({ event, resolve }) => {
           sameSite: PROD === 'true' ? 'none' : 'lax',
           secure: PROD === 'true'
         });
+        // automatic logout if data is corrupted
         return resolve(event);
       }
       event.locals.user = user;
@@ -21,6 +22,7 @@ const auth: Handle = (async ({ event, resolve }) => {
       event.cookies.delete('session', { path: '/' });
     }
   }
+  // user passed only if token was valid and got data
   return resolve(event);
 });
 
