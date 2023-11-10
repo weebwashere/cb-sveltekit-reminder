@@ -1,5 +1,5 @@
 # SvelteKit CB Example
-Aims to provide a SvelteKit + Carboard starter with cardboard.js
+Aims to provide a SvelteKit + CardBoard starter with cardboard.js
 
 # What this repo already did (CB + SvelteKit Setup 🔥)
 Step 1> Add cardboard.js
